@@ -1,4 +1,4 @@
-How to install SQl Server MAnagement Studio on Mac. 
+How to install SQL Server Management Studio on Mac. 
 
 step 1 : install Docker and sign In. 
     link1 for installing docker [https://docs.docker.com/desktop/setup/install/mac-install/]
