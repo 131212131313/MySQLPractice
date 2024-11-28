@@ -23,9 +23,9 @@ Step 3: Download the ms sql server image to docker.
   5. click on New Query to start querying. 
 
  =>To start the container again after closing them. 
-    docker start container
+    docker start [container Name/id]
  =>To start the container again after closing them
-    docker stop conatiner
+    docker stop [container Name/id]
 
 
 
