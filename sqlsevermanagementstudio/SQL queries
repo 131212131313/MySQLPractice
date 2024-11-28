@@ -1,0 +1,36 @@
+--Master is the database
+use master;
+GO;
+-- To create Database 
+CREATE DATABASE [DatabaseName];
+GO;
+--use rettech database to create table under it
+USE [DatabaseNAme];
+Go;
+-- create a table with column names and its data type. 
+CREATE TABLE TableName (
+Column1 datetime2,
+Column2datetime2 ,
+Column3 NVARCHAR(100),
+Column4 NVARCHAR(500)
+    );
+Go;
+
+/* After creating a table, To insert data from csv table 
+step 1:  Copy the csv file to docker.
+ docker cp '/Users/Downloads/foldername/file.csv'
+[Container Name/id]:/file.csv
+Step 2: run the command to upload the data from csv file to table.
+BULK INSERT dbo.TableName
+FROM '/file.csv'
+WITH (
+    FIELDTERMINATOR = ',',
+    ROWTERMINATOR = '\n',
+    FIRSTROW = 2
+);
+GO
+*/
+
+-- to view all the data from the table run select command. 
+SELECT * from [Database].[dbo].[tableName];
+GO;
